@@ -5,6 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/www"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "dependencies": {
     "aws-sdk": "^2.108.0",
     "body-parser": "~1.17.1",
