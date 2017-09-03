@@ -2,8 +2,11 @@
   "name": "musiccalls",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "node bin/www"
+  },
   "engines": {
-    "node": "8.4.0"
+    "node": "8.4.1"
   },
   "dependencies": {
     "aws-sdk": "^2.108.0",
