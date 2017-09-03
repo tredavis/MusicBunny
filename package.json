@@ -6,7 +6,7 @@
     "start": "node bin/www"
   },
   "engines": {
-    "node": "8.4.1"
+    "node": "8.4.0"
   },
   "dependencies": {
     "aws-sdk": "^2.108.0",
