@@ -13,7 +13,7 @@ let keys = require('../keys.js').SpotifyKeys;
 
 //the scopes that are availabe from spotify.
 let scopes = "playlist-read-private playlist-read-collaborative playlist-modify-public playlist-modify-private streaming user-follow-modify user-follow-read user-library-read user-library-modify user-read-private user-read-birthdate user-read-email user-top-read user-read-recently-played";
-let redirect_uri = "https://musicbunny.herokuapp.com/spotify/callback";
+let redirect_uri = "http://localhost:3000/spotify/callback";
 
 //spotify auth key
 let stateKey = 'spotify_auth_state';
