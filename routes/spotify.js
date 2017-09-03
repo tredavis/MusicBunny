@@ -28,6 +28,14 @@ let eventSender = null;
 
 server.listen(8000);
 
+io.on('connection', function(socket) {
+    //set the connection to a global socket
+    if (socket !== null || typeof socket !== 'undefined') {
+        eventSender = socket;
+    }
+});
+
+
 //making spotify api calls.
 let initSpotifyCalls = function(access_token) {
     console.log("Inside the spotify init call");
@@ -187,13 +195,6 @@ router.get('/refresh_token', function(req, res) {
             });
         }
     });
-});
-
-io.on('connection', function(socket) {
-    //set the connection to a global socket
-    if (socket !== null || typeof socket !== 'undefined') {
-        eventSender = socket;
-    }
 });
 
 module.exports = router;
